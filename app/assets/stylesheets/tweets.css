@@ -1,0 +1,9 @@
+.contents.box  {
+  overflow-x: auto;       /* 横幅が画面からはみ出たら横スクロールさせる */
+  white-space: nowrap;
+}
+.content_post{
+  display: inline-block;  /* 要素を横並びにする */
+  width: 650px;
+  height: 400px;
+}

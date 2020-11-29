@@ -1,4 +1,16 @@
 <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+  <% if user_signed_in? && current_user.already_favorited?(tweet) %>
+      <i class="fas fa-heart" style="color: red;"></i>
+    <span style="color: red;"></span>
+  <% else %>
+      <i class="far fa-heart"></i>
+  <% end %>
+  <% if user_signed_in? && current_user.already_liked?(tweet) %>
+       <i class="fas fas fa-star" style="color: blue;"></i>
+    <span style="color: blue;"></span>
+  <% else %>
+      <i class="far fas fa-star"></i>
+  <% end %>
   <div class="more">
     <span><%= image_tag 'arrow_top.png' %></span>
     <ul class="more_list">

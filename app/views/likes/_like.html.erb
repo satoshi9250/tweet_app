@@ -1,0 +1,9 @@
+<% if current_user.already_liked?(@tweet) %>
+  <%= link_to tweet_likes_path(@tweet), method: :delete do %>
+    <i class="fas fas fa-star" style="color: blue;">お気に入り</i>
+  <% end %>
+<% else %>
+  <%= link_to tweet_likes_path(@tweet), method: :post do %>
+    <i class="far fas fa-star">お気に入り</i>
+  <% end %>
+<% end %>

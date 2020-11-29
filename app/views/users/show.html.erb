@@ -1,6 +1,14 @@
-<div class="contents row">
+<div class="contents box">
   <p><%= @nickname %>さんの投稿一覧</p>
   <% @tweets.each do |tweet| %>
     <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+  <% end %>
+</div>
+<div class="contents box">>
+  <p><%= @nickname %>さんのお気に入り一覧</p>
+  <% if @likes.present? %>
+    <% @likes.each do |like| %>
+      <%= image_tag like.image, class: "content_post" %>
+    <% end %>
   <% end %>
 </div>
