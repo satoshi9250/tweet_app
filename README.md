@@ -7,7 +7,8 @@
 
 ・アプリ名 Freedom Pots
 ・url https://tranquil-shelf-81798.herokuapp.com/
-画面上部のゲストボタンから、メールアドレスとパスワードを入力せずにログインできます。
+
+・画面上部のゲストボタンから、メールアドレスとパスワードを入力せずにログインできます。
 
 ・Ruby 2.6.5
 ・Ruby on Rails 6.0.0
